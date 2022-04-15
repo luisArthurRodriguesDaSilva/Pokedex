@@ -33,7 +33,7 @@ const cleanString = (string) => string.normalize('NFD').replace(/\p{Diacritic}/g
 
 const upateCard = (typeString) => {
   const cardHTML = document.querySelector('.card-top');
-  const typesHTMl = document.querySelector('#poke-types');
+  const typesHTMl = document.querySelector('#poke-types');    /*parte que muda o nome para a respectiva classe em card-top {tananã}*/
   const types = typeString.split('/');
 
   cardHTML.classList = `card-top ${cleanString(types[0])}`;
