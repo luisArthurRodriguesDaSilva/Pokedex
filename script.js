@@ -16,10 +16,10 @@ const addAnimation = (local, animation, duration) => {
 
 const selectPokemon = (id) => {
   document.querySelectorAll('.poke-list li').forEach((poke) => {
-    const li = poke;
+    const li = poke;                                            /*remover o select passando por todos*/
     li.classList = '';
   });
-  document.getElementById(`${id}`).classList.add('selected');
+  document.getElementById(`${id}`).classList.add('selected');/*marcando o pokemon com o respectivo id atravéz do selected*/
 };
 
 const generateID = (id) => {
