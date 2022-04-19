@@ -80,7 +80,7 @@ const createList = () => {
   pokemons.forEach((pokemon) => {
     const li = document.createElement('li');
     li.id = (pokemon.id);
-    li.innerHTML += `<img src="${pokemon.img}">`;
+    li.innerHTML += `<img src="${pokemon.img}">`; /*adicionando img a cada li*/
     li.innerHTML += `<p>${pokemon.nome}</p>`;
     listHtml.appendChild(li);
 
